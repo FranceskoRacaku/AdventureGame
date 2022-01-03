@@ -64,7 +64,7 @@ app.post("/signup", (req,res)=> {
     req.session.destroy(() => {
         console.log("user reset");
     })
-    res.redirect("/?reason=invalid_user&day=monday");
+    res.redirect("/?reason=invalid_user");
 }
 
 });
