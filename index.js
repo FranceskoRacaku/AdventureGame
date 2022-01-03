@@ -23,6 +23,9 @@ app.get('/',(req,res)=>{
     let user ="";
     let punctuation="";
     let invalid_login = false;
+    req.session.destroy(() => {
+        console.log("user reset");
+    })
 
     /*const url = req.url;
     console.log("my url is", url);
