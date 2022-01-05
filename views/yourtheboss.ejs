@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+
+    <style>
+    body {background-color : black;
+        background-image: url('/forhouse.jpg');
+        margin: auto;
+        justify-content: center;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h8{
+        color: rgb(255, 8, 8);
+        font-size: 55px;
+        display : flex;
+        
+        flex-direction: column;
+        text-align:right;
+        float: right;
+        padding-left: 30px;
+    }
+    h1 {color: red;
+            margin-top:50px;
+            font-size:45px;
+            margin-left: 43%;
+            text-align:center;
+            display:inline-block;
+        }
+    h2{
+        color: red;
+        margin-top:20px;
+        font-size:25px;
+        display : flex;
+        flex-direction: column;
+        text-align:center;
+        }
+    h3{
+        color: red;
+        margin-top:20px;
+        font-size:25px;
+        display : flex;
+        flex-direction: column;
+        text-align:center;
+        }
+
+    p {
+    color: yellow;
+    margin-top:135px;
+    font-size:35px;
+    display : flex;
+    flex-direction: column;
+    text-align:center;
+    }
+
+    a { 
+    color: rgb(241, 36, 18);
+    }
+    h5 {
+        font-size: 35px;
+        display : flex;
+        flex-direction: column;
+        text-align:left;
+        padding-left: 30px;
+    }
+
+    .question-container {
+        background-color: rgb(58, 38, 43, 0.9);
+        height: auto;
+        width: 700px;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 20px;
+        align-items: center;
+        display : flex;
+        overflow: auto;
+  }
+</style>
+</head>
+<body>
+    <h1>Your Journey</h1> <h8><%= my_user %></h8>
+
+
+    <div class="question-container" >
+        <form class="data-for-questions">
+                <h2>Choose a Path</h2> 
+                <hr><hr>  
+                
+                <h3> As you walk through the woods, you see an old house with a parked car outside of it. What do you do?</h3>
+                
+
+                <p>
+                    A <a href = "/round1/yourtheboss/inthehouse">Knock on the door</a><br>
+                    B <a href = "/round1/yourtheboss/inthehouse">Sneak inside the house</a><br>
+                    C <a href = "/round1/yourtheboss/win">Steal the Car</a><br>
+                    D <a href = "/round1/yourtheboss/lost">Change Directions</a>
+
+                </p>
+        </form>
+    </div>
+    <h5>
+    <a href=  "/warmup"> WarmUp Page</a>
+</h5>
+</body>
+</html>
