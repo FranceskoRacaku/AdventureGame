@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign Out</title>
 </head>
 <style>
 
 body {
-            background: linear-gradient(to right, rgb(137, 139, 101), rgb(212, 24, 65));
+            background: linear-gradient(to right, rgb(15, 15, 7), rgb(212, 24, 65));
             margin: 0;
             padding: 0;
             height: 100vh;
@@ -97,48 +97,14 @@ body {
     {
         background-color: #d40909;
     }
-
-    h2{
-            color: rgb(255, 1, 1);
-            align-items: center;
-            flex-direction: column;
-            display: flex;
-            font-size: 22px;
-            margin-top: 50px;;
-        }
-
 </style>
 <body>
 <h1>
-    Welcome to MyAPP </h1>
+    You Are Signed Out </h1>
     <hr>
-
-    <div>
-    <form action="/signup" method="POST">
-        <input type="text" name="username" placeholder="What is your username?" /><br>
-        <hr>
-        <input type="password" name="password" placeholder="What is your password?" /><br>
-        <hr>
-    </div>
-    <input type="submit" value="Login!" id ="popUp" />
-
-        <% if (invalid_login) { %>
-        <div class= "error">
-            Invalid Login.
-        </div>
-
-        <% } %>
-        </form>
-
-        <h2>
-            Don't have an account? <a href="/singup"> Signup </a>It's Free!
-
-
-        </h2>
-
-
-
-    
+    <h2>
+     <a href= "/index.js">Back to Sign In</a>
+    </h2>
 </body>
 </html>
 
